@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    html {
+      background: black;
+      --interior-color: #c99;
+      --interior-color-hover: #99c;
+    }
+
+    main {
+      text-align: center;
+    }
+
+    svg {
+      background: white;
+      width: 700px;
+      height: 700px; 
+    }
+
+    path.interior {
+      stroke: var(--interior-color);
+      fill: url(#interior-fill) #fff;
+      cursor: pointer;
+    }
+
+    path.wall {
+      stroke: black;
+      fill: url(#wall-fill) #fff;
+    }
+
+    path.interior:hover {
+      stroke: var(--interior-color-hover);
+      fill: url(#interior-fill-hover) #fff;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <svg viewBox="-475 -210 850 850">
+      <defs>
+        <pattern id="wall-fill" patternUnits="userSpaceOnUse" width="10" height="10">
+          <path d="M 10 0 L 0 10" stroke="black" />
+          <path d="M 5 -5 L -5 5" stroke="black" />
+          <path d="M 15 5 L 5 15" stroke="black" />
+        </pattern>
+
+        <pattern id="interior-fill" patternUnits="userSpaceOnUse" width="8" height="20">
+          <path d="M 0 0 L 8 20" stroke="var(--interior-color)" />
+          <path d="M 4 -10 L 12 10" stroke="var(--interior-color)" />
+          <path d="M -4 10 L 4 30" stroke="var(--interior-color)" />
+        </pattern>
+
+        <pattern id="interior-fill-hover" patternUnits="userSpaceOnUse" width="8" height="20">
+          <path d="M 0 0 L 8 20" stroke="var(--interior-color-hover)" />
+          <path d="M 4 -10 L 12 10" stroke="var(--interior-color-hover)" />
+          <path d="M -4 10 L 4 30" stroke="var(--interior-color-hover)" />
+        </pattern>
+      </defs>
+    
+      <path d="M 0 0 l
+      281 0
+      0 574.5
+      -35 0
+      0 25
+      60 0
+      0 -775
+      -327.5 0
+      0 25
+      9.5 0
+      0 30
+      60 0
+      0 8.5
+      12 0
+      0 -8.5
+      68 0
+      0 -30
+      40 0
+      0 50
+      113 0
+      0 88.5
+      -221 0
+      0 -10
+      -12 0
+      0 10
+      -60 0
+      0 72
+      12 0
+      0 -60
+      " class="wall"/> 
+
+      <path d="M 51 574.5 l
+      45 0
+      0 25
+      -45 0
+      0 -25
+      " class="wall"/> 
+
+      <path d="M -49 574.5 l
+      0 25
+      -120 0
+      0 -25
+      68.5 0
+      0 -436.5
+      12 0
+      0 436.5
+      39.5 0
+      " class="wall"/> 
+
+      <path d="M -319 574.5 l
+      0 25
+      -90.5 0
+      0 -775
+      287.5 0
+      0 25
+      -69 0
+      0 138
+      -12 0
+      0 -138
+      -181.5 0
+      0 288.5
+      181.5 0
+      0 -60.5
+      12 0
+      0 72.5
+      -193.5 0
+      0 424.5
+      65.5 0
+      " class="wall"/> 
+
+      <!-- Kuchnia -->
+      <path d="M 70.5 0.5 l
+        210 0
+        0 230
+        -60 0
+        0 -170
+        -150 0
+        0 -60
+      " class="interior">
+      <title>Kuchnia</title>
+    </path>
+
+    <!-- Lodówka -->
+    <path d="M 0.5 0.5 l
+      70 0 0 60
+      -70 0 0 -60
+    " class="interior">
+    <title>Lodówka 70 x 60</title>
+  </path>
+
+      <!-- Kanapa -->
+      <path d="M 200 350 l 
+        70 0
+        0 210
+        -140 0
+        0 -70
+        70 0
+        0 -140
+        " class="interior">
+        <title>Kanapa 210 x 140</title>
+      </path>
+
+        <!-- Stolik -->
+        <path d="M 70 370 l 
+          90 0 0 90
+          -90 0 0 -90
+          " class="interior">
+          <title>Stolik 90 x 90 x 40</title>
+        </path>
+
+      <!-- Obrys samego mieszkania -->
+      <!--<path d="M 300 500 l 
+        281 0 
+        0 60 0 78 0 436.5
+        -369.5 0
+        0 -436.5
+        -12 0
+        0 436.5
+        -68.5 0 -150 0 -65.5 0
+        0 -424.5
+        193.5 0
+        0 -12 0 -60.5
+        -12 0
+        0 60.5
+        -181.5 0
+        0 -60.5 0 -90 0 -138
+        181.5 0
+        0 138
+        12 0
+        0 -138
+        69 0 100 0 9.5 0
+        0 30
+        60 0 12 0 70.5 0
+        0 -30
+        90 0 60.5 0
+        0 30 0 108.5
+        -60.5 0 -90 0 -70.5 0 -12 0 -60 0
+        0 72
+        12 0
+        0 -60" stroke="transparent" fill="transparent"/>-->
+    </svg>
+  </main>
+</body>
