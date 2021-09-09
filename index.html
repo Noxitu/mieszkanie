@@ -57,104 +57,101 @@
         </pattern>
       </defs>
     
-      <path d="M 0 0 l
-      281 0
-      0 574.5
-      -35 0
-      0 25
-      60 0
-      0 -775
-      -327.5 0
-      0 25
-      9.5 0
-      0 30
-      60 0
-      0 8.5
-      12 0
-      0 -8.5
-      68 0
-      0 -30
-      40 0
-      0 50
-      113 0
-      0 88.5
-      -221 0
-      0 -10
-      -12 0
-      0 10
-      -60 0
-      0 72
-      12 0
-      0 -60
+      <path d="M 0 0
+      h 281
+      v 574.5
+      h -35
+      v 25
+      h 60
+      v -775
+      h -327.5
+      v 25
+      h 9.5
+      v 30
+      h 60
+      v 8.5
+      h 12
+      v -8.5
+      h 68
+      v -30
+      h 40
+      v 50
+      h 113
+      v 88.5
+      h -221
+      v -10
+      h -12
+      v 10
+      h -60
+      v 72
+      h 12
+      v -60
       " class="wall"/> 
 
-      <path d="M 51 574.5 l
-      45 0
-      0 25
-      -45 0
-      0 -25
+      <path d="M 51 574.5
+      h 45
+      v 25
+      h -45
+      v -25
       " class="wall"/> 
 
-      <path d="M -49 574.5 l
-      0 25
-      -120 0
-      0 -25
-      68.5 0
-      0 -436.5
-      12 0
-      0 436.5
-      39.5 0
+      <path d="M -49 574.5
+      v 25
+      h -120
+      v -25
+      h 68.5
+      v -436.5
+      h 12
+      v 436.5
+      h 39.5
       " class="wall"/> 
 
-      <path d="M -319 574.5 l
-      0 25
-      -90.5 0
-      0 -775
-      287.5 0
-      0 25
-      -69 0
-      0 138
-      -12 0
-      0 -138
-      -181.5 0
-      0 288.5
-      181.5 0
-      0 -60.5
-      12 0
-      0 72.5
-      -193.5 0
-      0 424.5
-      65.5 0
+      <path d="M -319 574.5
+      v 25
+      h -90.5
+      v -775
+      h 287.5
+      v 25
+      h -69
+      v 138
+      h -12
+      v -138
+      h -181.5
+      v 288.5
+      h 181.5
+      v -60.5
+      h 12
+      v 72.5
+      h -193.5
+      v 424.5
+      h 65.5
       " class="wall"/> 
 
       <!-- Kuchnia -->
-      <path d="M 70.5 0.5 l
-        210 0
-        0 230
-        -60 0
-        0 -170
-        -150 0
-        0 -60
+      <path d="M 70.5 0.5
+        h 210
+        v 230
+        h -60
+        v -170
+        h -150
+        v -60
       " class="interior">
         <title>Kuchnia</title>
       </path>
 
       <!-- Lodówka -->
-      <path d="M 0.5 0.5 l
-        70 0 0 60
-        -70 0 0 -60
-      " class="interior">
+      <path d="M 0.5 0.5 h 70 v 60 h -70 v -60" class="interior">
         <title>Lodówka 70 x 60</title>
       </path>
 
       <!-- Kanapa -->
-      <path d="M 200 350 l 
-        70 0
-        0 210
-        -140 0
-        0 -70
-        70 0
-        0 -140
+      <path d="M 200 350
+        h 70
+        v 210
+        h -140
+        v -70
+        h 70
+        v -140
         " class="interior">
         <title>Kanapa 210 x 140</title>
       </path>
@@ -180,16 +177,34 @@
         70 0 0 120
         -70 0 0 -120
         " class="interior">
-        <title>Biurko</title>
+        <title>Biurko 120 x 70</title>
       </path>
 
-      <!-- Fotel  -->
+      <!-- Fotel -->
       <path d="M -44 225 l 
         50 0 0 50
         -50 0 0 -50
         " class="interior">
         <title>Fotel</title>
       </path>
+
+      <!-- Stół  --><!--
+      <path d="M 150 250 l 120 0 0 80 -120 0 0 -80" class="interior"><title>Stół 120 x 80</title></path>
+      <path d="M 160 235 l 50 0 0 50 -50 0 0 -50" class="interior"><title>Krzesło</title></path>
+      <path d="M 215 235 l 50 0 0 50 -50 0 0 -50" class="interior"><title>Krzesło</title></path>
+      <path d="M 160 295 l 50 0 0 50 -50 0 0 -50" class="interior"><title>Krzesło</title></path>
+      <path d="M 215 295 l 50 0 0 50 -50 0 0 -50" class="interior"><title>Krzesło</title></path>
+      -->
+
+      <!-- Stół -->
+      <path d="M 198 230 l 80 0 0 120 -80 0 0 -120" class="interior"><title>Stół 120 x 80</title></path>
+      <path d="M 183 237 l 50 0 0 50 -50 0 0 -50" class="interior"><title>Krzesło</title></path>
+      <path d="M 183 293 l 50 0 0 50 -50 0 0 -50" class="interior"><title>Krzesło</title></path>
+
+      <!-- Pufa -->
+      <g transform="translate(75, 515) rotate(-115)">
+        <path d="M -35 -35 h 35 a 35 35 0 1 1 -35 35 v -35" class="interior"><title>Pufa (worek)</title></path>
+      </g>
 
       <!-- Obrys samego mieszkania -->
       <!--<path d="M 300 500 l 
