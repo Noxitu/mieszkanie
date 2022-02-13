@@ -32,6 +32,10 @@
       stroke: var(--interior-color-hover);
       fill: url(#interior-fill-hover) #fff;
     }
+
+    .no {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -59,8 +63,10 @@
     
       <path d="M 0 0
       h 281
-      v 574.5
-      h -35
+      v 551.5
+      h -23
+      v 23
+      h -12
       v 25
       h 60
       v -775
@@ -117,8 +123,10 @@
       h -12
       v -138
       h -181.5
-      v 288.5
-      h 181.5
+      v 233.5
+      h 55
+      v 55
+      h 126.5
       v -60.5
       h 12
       v 72.5
@@ -130,9 +138,9 @@
       <!-- Kuchnia -->
       <path d="M 70.5 0.5
         h 210
-        v 230
+        v 190
         h -60
-        v -170
+        v -130
         h -150
         v -60
       " class="interior">
@@ -143,6 +151,38 @@
       <path d="M 0.5 0.5 h 70 v 60 h -70 v -60" class="interior">
         <title>Lodówka 70 x 60</title>
       </path>
+
+      <!-- Plyta indukcyjna (duża) -->
+      <g transform="translate(277, 150) rotate(90)" class="no">
+        <path d="M 0 0 h 60 v 52 h -60 z" style="fill: white; stroke: var(--interior-color);">
+          <title>Plyta indukcyjna 60 x 52</title>
+        </path>
+        <circle cx="14" cy="10" r="8" style="fill: white; stroke: var(--interior-color);" />
+        <circle cx="15" cy="31" r="10" style="fill: white; stroke: var(--interior-color);" />
+        <circle cx="43" cy="14" r="10" style="fill: white; stroke: var(--interior-color);" />
+        <circle cx="49" cy="34" r="8" style="fill: white; stroke: var(--interior-color);" />
+        <path d="M 15 45 h 35 v 4 h -35 z" style="fill: white; stroke: var(--interior-color);" />
+      </g>
+
+      
+      <!-- Plyta indukcyjna (mała) -->
+      <g transform="translate(277, 120) rotate(90)" class="">
+        <path d="M 0 0 h 29 v 52 h -29 z" style="fill: white; stroke: var(--interior-color);">
+          <title>Plyta indukcyjna 29 x 52</title>
+        </path>
+        <circle cx="14.5" cy="13.5" r="7.2" style="fill: white; stroke: var(--interior-color);" />
+        <circle cx="14.5" cy="33.5" r="8.25" style="fill: white; stroke: var(--interior-color);" />
+        <path d="M 7.5 45 h 14.5 v 4.7 h -14.5 z" style="fill: white; stroke: var(--interior-color);" />
+      </g>
+
+      <!-- Zlew -->
+      <g transform="translate(160, 15)" class="">
+        <path d="M 0 0 h 42 v 37 h -42 z" style="fill: white; stroke: var(--interior-color);">
+          <title>Zlew 42 x 37 (wnętrze)</title>
+        </path>
+        <circle cx="21" cy="10" r="5" style="fill: white; stroke: var(--interior-color);" />
+        <path d="M 21 -8 h 10 v 5 h -9 v 15 h -2 v -15 h -9 v -5 z" style="fill: var(--interior-color);" />
+      </g>
 
       <!-- Kanapa -->
       <path d="M 200 350
@@ -205,6 +245,12 @@
       <g transform="translate(75, 515) rotate(-115)">
         <path d="M -35 -35 h 35 a 35 35 0 1 1 -35 35 v -35" class="interior"><title>Pufa (worek)</title></path>
       </g>
+
+      <!-- Łazienka -->
+      <path d="M -380 -145 h 170 v 75 h -170 v -75" class="interior"><title>Wanna 170 x 75</title></path>
+      <path d="M -380 -65 h 46 v 80 h -46 v -80" class="interior"><title>Szafka 80 x 46</title></path>
+      <path d="M -383.5 17 h 20 v 65 h -20 v -65" class="interior"><title>65 x 20</title></path>
+      <path d="M -325.5 102 h 35 v 32 h -35 v -32" class="interior"><title>Szafka 35 x 32</title></path>
 
       <!-- Obrys samego mieszkania -->
       <!--<path d="M 300 500 l 
